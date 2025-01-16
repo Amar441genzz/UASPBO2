@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b9903b93-ad74-4070-ab35-e95f0a456f70">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from tb_penyiaraniklan]]>
+	</queryString>
+	<field name="id_penyiaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_penyiaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_jadwal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_user" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="12" width="207" height="31" uuid="2807042e-751b-40dc-ae2f-f9f46cfb7e8a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENYIARAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="8" y="2" width="100" height="20" uuid="c2283ee3-6c90-4a2a-8500-1b7d48e67365"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_penyiaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="2" width="100" height="20" uuid="0fb723dd-dc49-4728-a07b-788200de2b48"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_penyiaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="2" width="100" height="20" uuid="5ab4dfa2-caae-4c25-9bb2-76da160550ac"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="2" width="100" height="20" uuid="2fab4659-ff71-40e7-8487-2bf62db13261"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_user]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="8" y="15" width="100" height="20" uuid="9610ca98-813f-4fa1-93e2-e19b087cfa4e"/>
+				<textFieldExpression><![CDATA[$F{id_penyiaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="16" width="100" height="20" uuid="bdc45195-da78-4085-8500-118e36d26042"/>
+				<textFieldExpression><![CDATA[$F{tgl_penyiaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="15" width="100" height="20" uuid="3539f6a0-52d4-4d2f-b9a8-44019baa5d6b"/>
+				<textFieldExpression><![CDATA[$F{id_jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="15" width="100" height="20" uuid="487bdace-0ce3-4d3c-9a1e-7cf258930d5a"/>
+				<textFieldExpression><![CDATA[$F{id_user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

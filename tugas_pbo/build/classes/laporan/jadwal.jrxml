@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16e02534-e84f-4a05-a5ad-fba6f7c58927">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from tb_jadwaliklan]]>
+	</queryString>
+	<field name="id_jadwal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_iklan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_acara" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telah_tayang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="194" y="12" width="193" height="39" uuid="1b765675-b110-41f1-85c1-bc4fef790373"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN JADWAL ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="7" y="2" width="100" height="20" uuid="b4b7f002-1c04-456a-8fb8-d56fecaeca6a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="2" width="100" height="20" uuid="1c57b494-f8b6-4058-8047-28ec4b882960"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_iklan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="2" width="100" height="20" uuid="47260424-72f5-447c-812d-ec62571c1a7e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_acara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="2" width="100" height="20" uuid="8340ee63-100c-4fb9-94db-d627540e02b7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="2" width="100" height="20" uuid="76b056a9-9f8e-4386-b699-84f9097b2fc7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[telah_tayang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="2" width="100" height="20" uuid="dc3676c6-4bb1-44eb-9b49-698a8af91414"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="7" y="23" width="100" height="20" uuid="6411dc20-dda8-4ac0-92ef-3b2fd61848e8"/>
+				<textFieldExpression><![CDATA[$F{id_jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="26" width="100" height="20" uuid="dfdcc279-fd9c-4309-93ea-c08fd8808c74"/>
+				<textFieldExpression><![CDATA[$F{id_iklan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="29" width="100" height="20" uuid="ebba53ff-b0a0-4f70-ac33-01b4c373ded4"/>
+				<textFieldExpression><![CDATA[$F{id_acara}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="27" width="100" height="20" uuid="f132430a-0716-4af2-8505-b6dc7c873a65"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="31" width="100" height="20" uuid="aa4dfa74-7c78-42ed-8196-5562c61ae04c"/>
+				<textFieldExpression><![CDATA[$F{telah_tayang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="479" y="30" width="100" height="20" uuid="b316dec9-7cda-410d-931b-735c37078a2b"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

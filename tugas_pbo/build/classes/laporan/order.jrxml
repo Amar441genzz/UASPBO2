@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="720" pageHeight="802" columnWidth="720" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aa5d1a58-d9c9-4268-9789-3d1e248b02d5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from tb_orderiklan]]>
+	</queryString>
+	<field name="id_order" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_pengiklan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_order" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_awal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_ahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_iklan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perhari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="frekuensi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_user" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kategori" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="243" y="12" width="184" height="25" uuid="d621c6f1-9714-423d-80db-ed671a36e88b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN ORDER]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="2" width="42" height="20" uuid="0b5ac3b7-8904-4b26-9337-d443833f714a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_order]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="0" width="100" height="20" uuid="d2ca4091-f6e7-4968-9d98-d242ac7c14d9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_pengiklan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="2" width="100" height="20" uuid="d9e629af-d6c6-44b5-8d62-7879bedd63fa"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_order]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="219" y="2" width="100" height="20" uuid="af6a74d1-f375-4bd9-bdb9-ea4cf59c912f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_awal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="2" width="100" height="20" uuid="40f1c4b4-d083-44cc-a56c-56ab2e0bd77d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_ahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="2" width="100" height="20" uuid="db77035a-9763-4543-a084-7af044c358b2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[jenis_iklan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="2" width="100" height="20" uuid="0a34ce73-9853-408a-a49d-2c76a5bdfd9b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[perhari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="2" width="100" height="20" uuid="7382d37b-a99a-4394-8e5b-3035dc587b1d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[frekuensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="542" y="2" width="100" height="20" uuid="6e52b71b-40aa-47fa-bc42-3d0941dae403"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_user]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="634" y="2" width="100" height="20" uuid="0a0e824d-29d4-4a63-93b4-3b1c09da153d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[kategori]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="75" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="20" width="100" height="20" uuid="47df156c-05f8-43f2-98c2-064c1dc13f09"/>
+				<textFieldExpression><![CDATA[$F{id_order}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="20" width="100" height="20" uuid="33b2a3dd-572e-41a3-9d7f-1b55a4247051"/>
+				<textFieldExpression><![CDATA[$F{id_pengiklan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="23" width="100" height="20" uuid="5ce0b59f-7a02-4ff4-b938-c607d6ffdf1e"/>
+				<textFieldExpression><![CDATA[$F{tgl_order}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="23" width="100" height="20" uuid="1058b0bf-0d98-4aea-bccd-6d5f8cd889fa"/>
+				<textFieldExpression><![CDATA[$F{tgl_awal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="23" width="100" height="20" uuid="af3efdd5-942e-468b-95ff-773c5ff1bbd4"/>
+				<textFieldExpression><![CDATA[$F{tgl_ahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="343" y="23" width="100" height="20" uuid="9cae3412-5fda-4103-b840-9db316500d94"/>
+				<textFieldExpression><![CDATA[$F{jenis_iklan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="23" width="100" height="20" uuid="488812ff-7c1f-4922-bade-e2605951a894"/>
+				<textFieldExpression><![CDATA[$F{perhari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="23" width="100" height="20" uuid="4e490e57-7ff4-4bcc-a59b-df46663f993d"/>
+				<textFieldExpression><![CDATA[$F{frekuensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="552" y="20" width="100" height="20" uuid="74928f56-1edf-410c-a927-458ec45a2ad3"/>
+				<textFieldExpression><![CDATA[$F{id_user}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="634" y="22" width="100" height="20" uuid="8e258adc-86e4-4cdd-b0ab-11e065028364"/>
+				<textFieldExpression><![CDATA[$F{kategori}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
